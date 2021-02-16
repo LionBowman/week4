@@ -23,8 +23,9 @@ function containerQty(){
         } else{
 	        //we need to parse the json response to access
             data = JSON.parse(data)
-            console.log("Number of Containers RUNNING = " + data.Containers);
-            console.log(data);
+            console.log("Number of Containers RUNNING = " + data.ContainersRunning);
+            console.log("Number of Containers PAUSED = " + data.ContainersPaused);
+            console.log("Number of Containers STOPPED = " + data.ContainersStopped);
         }
     });
 }
